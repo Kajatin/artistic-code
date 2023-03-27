@@ -8,7 +8,7 @@ let new_obstacle = [];
 function setup() {
   colorMode(HSB, 255);
   createCanvas(500, 300);
-  background(0);
+  background(15);
 
   target = createVector(random(50, width - 50), random(20, 100));
   population = new Population(50, 200);
@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(15);
 
   population.run(count, target);
   count++;
